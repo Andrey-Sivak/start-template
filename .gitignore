@@ -42,4 +42,4 @@
 /node_modules
 package-lock.json
 .eslintcache
-/dist
+dist/js/*.txt
