@@ -131,9 +131,9 @@ $ npm i
 `npm run make:fonts` : After run this command remove `src/scss/fonts.scss` because this file will be created & fill automatically. This task will scan `src/fonts` then create `woff|woff2` fonts for each font then pass its to `src/fonts` and create correct `src/scss/fonts.scss`
 
 ___
-![GitHub all releases](https://img.shields.io/github/downloads/Andrey-Sivak/project4/total)
-![GitHub language count](https://img.shields.io/github/languages/count/Andrey-Sivak/project4)
-![GitHub top language](https://img.shields.io/github/languages/top/Andrey-Sivak/project4?color=yellow)
-![GitHub forks](https://img.shields.io/github/forks/Andrey-Sivak/project4?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/Andrey-Sivak/project4?style=social)
+![GitHub all releases](https://img.shields.io/github/downloads/Andrey-Sivak/start-template/total)
+![GitHub language count](https://img.shields.io/github/languages/count/Andrey-Sivak/start-template)
+![GitHub top language](https://img.shields.io/github/languages/top/Andrey-Sivak/start-template?color=yellow)
+![GitHub forks](https://img.shields.io/github/forks/Andrey-Sivak/start-template?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/Andrey-Sivak/start-template?style=social)
 
