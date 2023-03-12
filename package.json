@@ -1,18 +1,18 @@
 {
-    "name": "adapty",
-    "version": "1.7.16",
-    "description": "",
+    "name": "start-template",
+    "version": "1.0.0",
+    "description": "This template is based on the bundle of gulp and webpack using a lot of different tools to simplify and automate your work with HTML, CSS, JS, Fonts and of course images.",
     "main": "gulpfile.js",
     "type": "module",
     "scripts": {
         "dev": "gulp",
         "build": "gulp build --build",
-        "svgSprive": "gulp svgSprive",
+        "svgSprite": "gulp svgSprive",
         "prepare": "husky install",
         "lint": "eslint ./src/js --cache && echo \"No linting errors\"",
         "lint:fix": "eslint ./src/js --fix"
     },
-    "author": "",
+    "author": "Andrey Sivak",
     "license": "ISC",
     "browserslist": [
         "> 1%",
