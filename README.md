@@ -27,23 +27,17 @@ $ npm i
 ---
 
 ## Tools Used
-✅ `Gulp` for assets management
+- `Gulp` for assets management
   - Optimize images
   - Create `SVG` sprites
   - Local dev server with hot reload
   - Convert `.ttf|.otf` fonts to `.woff|.woff2`
-
-✅ `Webpack` & `Babel` for JavaScript
-
-✅ `PostCSS` using `Tailwind` & `SCSS` for clear and optimize css
-
-✅ `ESLint` & `Prettier` for code styling
-
-✅ `git-commit-msg-linter` for clear commit messages
-
-✅ `validate-branch-name` for branch naming
-
-✅ `Husky` for git hooks:
+- `Webpack` & `Babel` for JavaScript
+- `PostCSS` using `Tailwind` & `SCSS` for clear and optimize css
+- `ESLint` & `Prettier` for code styling
+- `git-commit-msg-linter` for clear commit messages
+- `validate-branch-name` for branch naming
+- `Husky` for git hooks:
   - pre-commit - `$ npx validate-branch-name && npm run lint:fix`
   - commit-msg - `$ npx commitlint --edit $1`
   - pre-push - `$ npm run lint`
@@ -99,7 +93,7 @@ $ npm i
 ```
 ---
 
-### Common settings & configurations
+## Common settings & configurations
 
 ✔️  `gulpfile.js` - common bundle file. `gulp` directory - all gulp settings & options
 
@@ -114,21 +108,15 @@ $ npm i
 
 ---
 
-### Available CLI commands
+## Available CLI commands
 
-`npm run dev` : start development, fire dev server.
-
-`npm run build` : create build bundle to `app.path.buildFolder`
-
-`npm run svgSprite` : create svg Sprite
-
-`npm run prepare` : will execute before `npm i` for install Husky
-
-`npm run lint` : apply eslint for `src/js`
-
-`npm run lint:fix` : apply eslint fix for `src/js`
-
-`npm run make:fonts` : After run this command remove `src/scss/fonts.scss` because this file will be created & fill automatically. This task will scan `src/fonts` then create `woff|woff2` fonts for each font then pass its to `src/fonts` and create correct `src/scss/fonts.scss`
+- `npm run dev` : start development, fire dev server.
+- `npm run build` : create build bundle to `app.path.buildFolder`
+- `npm run svgSprite` : create svg Sprite
+- `npm run prepare` : will execute before `npm i` for install Husky
+- `npm run lint` : apply eslint for `src/js`
+- `npm run lint:fix` : apply eslint fix for `src/js`
+- `npm run make:fonts` : After run this command remove `src/scss/fonts.scss` because this file will be created & fill automatically. This task will scan `src/fonts` then create `woff|woff2` fonts for each font then pass its to `src/fonts` and create correct `src/scss/fonts.scss`
 
 ___
 ![GitHub all releases](https://img.shields.io/github/downloads/Andrey-Sivak/start-template/total)
