@@ -25,7 +25,7 @@ export const path = {
 		svg: `${srcFolder}/img/**/*.svg`,
 		svgicons: `${srcFolder}/svgicons/*.svg`,
 		jsLibs: `${srcFolder}/js/libs/*.js`,
-		fonts: `${srcFolder}/fonts/*.*`,
+		fonts: `${srcFolder}/fonts/`,
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,
@@ -36,7 +36,7 @@ export const path = {
 		jsLibs: `${srcFolder}/js/libs/*.js`,
 	},
 	clean: buildFolder,
-	buildFolder: buildFolder,
-	srcFolder: srcFolder,
-	rootFolder: rootFolder,
+	buildFolder,
+	srcFolder,
+	rootFolder,
 };

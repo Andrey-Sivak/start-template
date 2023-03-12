@@ -9,7 +9,7 @@ import { server } from './gulp/tasks/server.js';
 import { images } from './gulp/tasks/images.js';
 import { svgSprive } from './gulp/tasks/svgSprite.js';
 import { jsLibs } from './gulp/tasks/jsLibs.js';
-import { fonts } from './gulp/tasks/fonts.js';
+import {copyFonts, otfToTtf, convertTtfToWoff, fontsStyle} from './gulp/tasks/fonts.js';
 import {html} from "./gulp/tasks/html.js";
 
 global.app = {
@@ -33,7 +33,9 @@ function watcher() {
 
 export { svgSprive };
 
-const mainTasks = gulp.parallel(copy, fonts, jsLibs, scss, js, images);
+const generateFonts = gulp.series(otfToTtf, convertTtfToWoff, fontsStyle);
+
+const mainTasks = gulp.parallel(copy, copyFonts, jsLibs, scss, js, images);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
@@ -42,3 +44,4 @@ export { dev };
 export { build };
 
 gulp.task('default', dev);
+gulp.task('make:fonts', generateFonts);
