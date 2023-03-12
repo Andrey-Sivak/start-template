@@ -10,7 +10,8 @@
         "svgSprite": "gulp svgSprive",
         "prepare": "husky install",
         "lint": "eslint ./src/js --cache && echo \"No linting errors\"",
-        "lint:fix": "eslint ./src/js --fix"
+        "lint:fix": "eslint ./src/js --fix",
+        "make:fonts": "gulp make:fonts"
     },
     "author": "Andrey Sivak",
     "license": "ISC",
