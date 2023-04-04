@@ -1,6 +1,6 @@
 {
     "name": "start-template",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "This template is based on the bundle of gulp and webpack using a lot of different tools to simplify and automate your work with HTML, CSS, JS, Fonts and of course images.",
     "main": "gulpfile.js",
     "type": "module",
